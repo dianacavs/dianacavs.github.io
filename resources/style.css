@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Ubuntu+Mono:wght@700&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-image: linear-gradient(#f0efff, #f9defa, #6055a2);
+  font-size: 16px;
+  color: #47388d;
+  line-height: 1.75em;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  padding: 0; margin: 0;
+}
+
+#top{
+  background-image: url(img/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  line-height: 55px; 
+  box-shadow: inset 0 0 0 1000px rgba(255,255,255,0.3);
+}
+
+.header-text{
+  text-align: center;
+  margin-right: 15%;
+  margin-left: 15%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  box-shadow: inset 0 0 0 1000px rgba(255,255,255,0.7);
+}
+
+.nav-item a:visited{
+  color: #47388d;
+}
+
+.nav-item a:link{
+  color: #47388d;
+}
+
+a:link{
+  text-decoration: none;
+  color: #401fd7;
+}
+
+a:visited{
+ color: #8F95CC;
+}
+
+a:hover{
+  cursor: pointer;
+  text-decoration: underline;
+  color: #47388d;
+  opacity:1;
+}
+
+h1{
+  font-family: 'Ubuntu Mono', monospace;
+  color: #47388d;
+  font-size: 75px;
+}
+
+h2{
+  font-family: 'Ubuntu Mono', monospace;
+  color: #47388d;
+  font-size: 30px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+h3{
+  color: #47388d;
+  font-size: 30px;
+  padding-top: 20px;
+}
+
+h4{
+  text-align: center;
+  font-size: 18px;
+}
+
+.project-button{
+  background-color: #f0efff;
+  border: 2px solid #47388d;
+  color: #47388d;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.project-button:hover{
+  background-color: #47388d;
+  color: #f0efff; 
+  cursor:pointer;
+}
+
+.project-buttons{
+  display: flex;
+  justify-content: center;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  justify-content: space-between;
+  padding-top: 15px;
+}
+
+.nav-social{
+  position: fixed;
+  top:0;
+  right:0;
+  padding:0px;
+  padding-right: 20px;
+  z-index: 1000;
+}
+
+.nav-social li{
+  display: inline;
+}
+
+.social-item svg {
+  height: 2.5rem;
+  fill:#47388d;
+  padding: 5px;
+}
+
+.social-item:hover svg {
+  fill: #6c60a4;
+}
+
+.nav-menu li {
+  display: inline;
+  padding-right: 3%;
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 25px;
+  list-style: none;
+}
+
+.hamburger-toggle{
+  display: none;
+}
+
+.projects, .about{
+  margin-top: 100px;
+  margin-right: 5%;
+  margin-left: 5%;
+  padding-bottom: 5%;
+  padding-right: 3%;
+  padding-left: 3%;
+  margin-bottom: 3%;
+  box-shadow: inset 0 0 0 1000px rgba(255,255,255,0.5);
+}
+
+.project-body{
+  text-align: center;
+  line-height: 1.5em;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-item{
+  padding-top: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+@media only screen and (max-width: 768px) {
+
+  h1 {
+    font-size: 9vw;
+  }
+
+  h2,h3 {
+    font-size: 5vw;
+  }
+
+  h4{
+    font-size: 4vw;
+  }
+
+  body{
+    font-size: 3vw;
+  }
+
+  img{
+    max-width: 150px;
+  }
+
+  .header-text{
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+
+  .projects, .about{
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 30%;
+    margin-bottom: 10%;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-social{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .social-item svg {
+    width: 7vw;
+  }
+
+  .hamburger-toggle {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    background-color: transparent;
+    color:#47388d;
+    border: none;
+    cursor:pointer;
+    outline:none;
+    display: block;
+  }
+
+  .active{
+    display: block;
+    margin-left: 25px;
+    margin-top: 5px;
+  }
+
+  .active li{
+    display: block;
+    height: 2.2rem; 
+    font-size: 4.75vw;  
+  }
+
+  #top{
+    padding-top: 30%;
+  }
+
+  .header-text{
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+
+  .grid-container{
+    grid-template-columns: 1fr;
+    padding: 0px;
+  }
+
+  .project-button{
+    padding: 11px 24px;
+    font-size: 12px;
+  }
+
+}

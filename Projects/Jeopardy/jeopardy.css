@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Lusitana|Anton|Open+Sans+Condensed:700|Pathway+Gothic+One|Oswald|Heebo:300');
+
+header{background-color: whitesmoke;
+      background-image: url("banner.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      padding-bottom: 15%;}
+
+h1{text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 3.25em;
+    text-transform: uppercase;
+    color: steelblue;}
+
+h2{text-align: left;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: steelblue;}
+
+h3{text-align: center;
+      font-family: 'Oswald', sans-serif;
+      font-size: 2em;
+      text-transform: uppercase;
+      color: steelblue;}
+
+h4{text-align: center;
+    font-family: 'Heebo', sans-serif;
+    font-size: 1.25em;
+    color: dimgray;}
+
+body {font-family: 'Heebo', sans-serif;
+      color: dimgray;
+      text-align: left;
+      font-size: .9em;
+      padding-left: 15%;
+      padding-right: 15%;
+      background-color: whitesmoke;}
+
+input[type=text] {font-family: 'Heebo', sans-serif;
+                  width: 25%;
+                  padding: 12px 20px;
+                  font-size: 1.5em;
+                  margin: 8px 0;
+                  box-sizing: border-box;
+                  width: 300px;}
+
+.clue{background-color: navy;
+      height: 50%;
+      width: 70%;
+      margin: auto;
+      padding-left: 3%;
+      padding-right: 3%;
+      }
+
+.button{background-color: steelblue;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        margin-left: 150px;
+        border-radius: 4px;
+        font-family: 'Pathway Gothic One', sans-serif;
+        font-size: 1.25em;}
+
+.button2{background-color: steelblue;
+          border: none;
+          color: white;
+          margin: 0;
+          padding: 16px 32px;
+          margin-top: 20px;
+          border-radius: 4px;
+          font-family: 'Pathway Gothic One', sans-serif;
+          font-size: 1.25em;}
+
+.button:active, .button2:active{background-color:rgb(36, 67, 92)}
+
+.response{font-family: 'Open Sans Condensed', sans-serif;
+          text-align: left;
+          padding-left: 20%;
+          padding-bottom: 3%;
+          font-size: 1.25em;}
+
+.category {font-family: 'Anton', serif; font-size: 2.5em; color:rgb(230, 195, 0); background-color: navy; text-transform: uppercase; text-align: center; padding-top: 25px; padding-bottom: 20px}
+
+.question {font-family: 'Lusitana', serif; font-size: 1.5em; color: white; background-color: navy; text-transform: uppercase; text-align: center; padding-bottom: 35px}
+
+.timer{font-family: 'Pathway Gothic One', sans-serif; font-size: 2em; color: white; text-align: center; padding-bottom: 15px}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+	<head>				
+		<meta charset = "utf-8">
+		<title>Mock Jeopardy Test</title>	
+		<link rel = "stylesheet" type = "text/css" href = "jeopardy.css">
+		<script src ="jeopardy.js"></script>
+	</head>
+	<body>		
+		<header></header>
+		<div class = "clue">
+			<p class = "category" id = "category"></p>
+
+			<p class = "question" id = "question"></p>
+
+			<p class = "timer" id = "timer"></p>
+		</div>
+		<div class = "response">
+			<p id = "count"> </p>
+
+			<form onSubmit = 'return false;'>
+				<input id = "userinput" type = "text" autofocus>
+				<input class = "button" id = "next" type = "button" value = "SUBMIT">
+			</form>
+
+		</div>
+		<audio id = "theme" preload = "auto">
+			<source src = "theme.mp3" type = "audio/mpeg">
+		</audio>
+	</body>
+</html>
